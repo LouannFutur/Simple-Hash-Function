@@ -1,0 +1,6 @@
+SHF vulnerabilities :
+
+Fixed :
+- the message to hash is composed of a succession of the same character
+
+Don't hesitate to send me a possible way that would create collisions ! 
