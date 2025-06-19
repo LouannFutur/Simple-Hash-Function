@@ -10,8 +10,9 @@ def SimpleHashFunction(msg):
 
       letters.append(int(ord(let)*(msg.index(let)+1)))
 
-    
-
+  # Avoiding that the message would be composed of the same letter  
+  letters.append("1")
+  letters.append("2")
   all_sum_result_for_final_mul = []
 
   final_result = 1
