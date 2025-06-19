@@ -1,0 +1,53 @@
+letters = []
+
+msg = "MyPassword"
+
+for let in msg:
+
+    letters.append(ord(let))
+
+    
+
+    letters.append(int(ord(let)*(msg.index(let)+1)))
+
+    
+
+all_sum_result_for_final_mul = []
+
+final_result = 1
+
+    
+
+for let in letters:
+
+    final_2_result = 0
+
+    all_modulos_result_for_final_sum = []
+
+    for j in range(len(letters)):
+
+        result = let % letters[j]
+
+        all_modulos_result_for_final_sum.append(result)
+
+
+
+    for elt in all_modulos_result_for_final_sum:
+
+      final_2_result += elt
+
+      
+
+    all_sum_result_for_final_mul.append(final_2_result)
+
+
+
+
+
+for elt2 in all_sum_result_for_final_mul:
+
+    final_result *= elt2
+
+
+
+print(final_result)
